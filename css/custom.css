@@ -48,20 +48,26 @@ h1, h2, h3, h4, h5, h6 {
 	background-attachment: fixed;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 	.jumbotron.feature {
-		background-size: contain;
-		background-position: center center;
+	  background-attachment: scroll;
 	}
-}
-
-@media (max-width: 767px) {
+  }
+  
+  /* For iPad 6th generation in portrait orientation and smaller screens */
+  @media (max-width: 767px), (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 	.jumbotron.feature {
-		background-size: contain;
-		background-position: center center;
-		background-attachment: scroll;
+	  background-size: contain;
+	  background-position: center center;
 	}
-}
+  }
+  
+  /* For screens larger than iPad 6th generation */
+  @media (min-width: 1025px) {
+	.jumbotron.feature {
+	  background-size: cover;
+	}
+  }
 
 
 
