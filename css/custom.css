@@ -41,19 +41,26 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 .jumbotron.feature {
-	background-image: url('alfonse5.gif');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
-}
-
-@media (max-width: 767px) {
-	.jumbotron.feature {
-		background-size: contain;
+		background-image: url('alfonse5.gif');
+		background-repeat: no-repeat;
+		background-size: cover;
 		background-position: center center;
+		background-attachment: fixed;
 	}
-}
+	
+@media (max-width: 991px) {
+		.jumbotron.feature {
+			background-size: contain;
+			background-position: center center;
+		}
+	}
+	
+@media (max-width: 767px) {
+		.jumbotron.feature {
+			background-size: contain;
+			background-position: center center;
+		}
+	}
 
 .container img {
 	max-width: 100%;
