@@ -41,33 +41,33 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 .jumbotron.feature {
-	background-image: url('alfonse5.gif');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
-}
-
+		background-image: url('alfonse5.gif');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+	
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-	.jumbotron.feature {
-	  background-attachment: scroll;
+		.jumbotron.feature {
+			background-attachment: scroll;
+		}
 	}
-  }
-  
-  /* For iPad 6th generation in portrait orientation and smaller screens */
-  @media (max-width: 767px), (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-	.jumbotron.feature {
-	  background-size: contain;
-	  background-position: center center;
+	
+@media (max-width: 767px), (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+		.jumbotron.feature {
+			background-size: cover;
+			background-position: center center;
+			background-attachment: scroll;
+		}
 	}
-  }
-  
-  /* For screens larger than iPad 6th generation */
-  @media (min-width: 1025px) {
-	.jumbotron.feature {
-	  background-size: cover;
+	
+@media (min-width: 1025px) {
+		.jumbotron.feature {
+			background-size: cover;
+		}
 	}
-  }
+	
 
 
 
